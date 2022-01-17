@@ -2,28 +2,40 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cart.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flipkart | Home</title>
+
+    <link rel="stylesheet" href="./style/all.css" />
+    <link rel="stylesheet" href="./style/cart.css" />
+    <link rel="shortcut icon" href="./images/favicon.jpeg" type="image/x-icon">
 </head>
 
 <body>
-    <div class="header">
-        <header>
-            <nav >
-                <ul >
-                    <li><a href="#"><img class="logoimage" src="./images/logo.jpeg" alt="Flipkart logo"></a></li>
-                    <li><input class="searchBox" type="text" placeholder="search for products, brands and more" /></li>
-                    <li class="endPart"><button class="loginBtn">login</button></li>
-                    <li><a href="#">more</a></li>
-                    <li><a href="#"><img src="./images/cart.PNG" /></a></li>
-                </ul>
-                
-            </nav>
-        </header>
-    </div>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#"><img class="logoimage" src="./images/logo.jpeg" alt="Flipkart logo" /></a>
+                </li>
+                <li>
+                    <div class="searchBox">
+                        <input type="text" placeholder="Search for Product, Brands" />
+                        <i class="fas fa-search"></i>
+                    </div>
+                </li>
+                <div class="rightNav">
+                    <li class="loginBtn">Login</li>
+                    <li class="text-white">More <i class="fas fa-caret-down"></i></li>
+                    <li class="text-white">
+                        Cart <i class="fas fa-shopping-cart"></i>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
     <main>
         <section>
             <div class="category-flex">
@@ -41,27 +53,35 @@
                 </div>
                 <div>
                     <img src="./images/Fashion.png" alt="Fashion" />
-                    <p><select name="" id="">
+                    <p>
+                        <select name="" id="">
                             <option value="">Fashion</option>
-                        </select></p>
+                        </select>
+                    </p>
                 </div>
                 <div>
                     <img src="./images/Electronics.png" alt="Electronics" />
-                    <p><select name="" id="">
+                    <p>
+                        <select name="" id="">
                             <option value="">Electronics</option>
-                        </select></p>
+                        </select>
+                    </p>
                 </div>
                 <div>
                     <img src="./images/Home.png" alt="Home" />
-                    <p><select name="" id="">
+                    <p>
+                        <select name="" id="">
                             <option value="">Home</option>
-                        </select></p>
+                        </select>
+                    </p>
                 </div>
                 <div>
                     <img src="./images/Appliances.png" alt="Appliance" />
-                    <p><select name="" id="">
+                    <p>
+                        <select name="" id="">
                             <option value="">Appliance</option>
-                        </select></p>
+                        </select>
+                    </p>
                 </div>
                 <div>
                     <img src="./images/Travel.png" alt="Travel" />
@@ -69,104 +89,113 @@
                 </div>
                 <div>
                     <img src="./images/Beauty,toys and more.png" alt="Beauty, Toys & More" />
-                    <p><select name="" id="">
+                    <p>
+                        <select name="" id="">
                             <option value="">Beauty, Toys & More</option>
-                        </select></p>
+                        </select>
+                    </p>
                 </div>
             </div>
         </section>
-        <section class="sectionclass">
-            <div class="sectionHeader">
-                <big>Deals of the Day</big>
-                <small>22 : 07 : 36 left</small>
-                <button class="viewBtn">view</button>
-            </div>
-            <div class="deal-flex">
-                <div>
-                    <img src="./images/sonata.jpeg" alt="product1">
-                    <h2>Casio, Fastrack, Sonata...</h2>
-                    <p>Upto 80%+Extra 10%Off</p>
-                    <small>Knockout Deals!</small>
+        <section class="sectionTop">
+            <div class="sectionclass" style="margin-right: 2px;">
+                <div class="sectionHeader">
+                    <div class="sectionDes">
+                        <big>Deals of the Day</big>
+                        <small> <i class="fas fa-stopwatch"></i> 22 : 07 : 36 left </small>
+                    </div>
+                    <button>VIEW ALL</button>
                 </div>
-                <div>
-                    <img src="./images/temple.jpeg" alt="product1">
-                    <h2>Home Temple & more</h2>
-                    <p>Extra 10%Off</p>
-                    <small>Space Saving Furniture</small>
-                </div>
-                <div>
-                    <img src="./images/tablet.jpeg" alt="product1">
-                    <h2>Premium Tablet Cases</h2>
-                    <p>Extra 10%Off</p>
-                    <small>For All Top Models</small>
-                </div>
-                <div>
-                    <img src="./images/home-decor.jpeg" alt="product1">
-                    <h2>Best Of Home Decor</h2>
-                    <p>From 79</p>
-                    <small>Lowest Price Ever</small>
-                </div>
-                <div>
-                    <img src="./images/metronaunts.jpeg" alt="product1">
-                    <h2>Metronaunts,Provogue &...</h2>
-                    <p>From 249Extra 10%Off</p>
-                    <small>Jacket, Dresses & More</small>
-                </div>
-                <div>
-                    <img src="./images/LAVA.jpeg" alt="product1">
-                    <h2>LAVA A1500</h2>
-                    <p>Flat 830 Off</p>
-                    <small>Now 999</small>
-                </div>
-            </div>
-            
-        </section>
-        <section class="sectionclass">
-            <div class="sectionHeader">
-                <big>Books And music Instruments</big>
-                <small>Shop now</small>
-                <button>view</button>
-            </div>
-            <div class="deal-flex">
+                <div class="deal-flex">
+                    <div class="productCard">
+                        <img src="./images/sonata.jpeg" alt="product1" />
+                        <h2>Casio, Fastrack, Sonata...</h2>
+                        <p>Upto 80%+Extra 10%Off</p>
+                        <small>Knockout Deals!</small>
+                    </div>
+                    <div class="productCard">
+                        <img src="./images/temple.jpeg" alt="product1" />
+                        <h2>Home Temple & more</h2>
+                        <p>Extra 10%Off</p>
+                        <small>Space Saving Furniture</small>
+                    </div>
+                    <div class="productCard">
+                        <img src="./images/tablet.jpeg" alt="product1" />
+                        <h2>Premium Tablet Cases</h2>
+                        <p>Extra 10%Off</p>
+                        <small>For All Top Models</small>
+                    </div>
+                    <div class="productCard">
+                        <img src="./images/home-decor.jpeg" alt="product1" />
+                        <h2>Best Of Home Decor</h2>
+                        <p>From 79</p>
+                        <small>Lowest Price Ever</small>
+                    </div>
+                    <div class="productCard">
+                        <img src="./images/metronaunts.jpeg" alt="product1" />
+                        <h2>Metronaunts,Provogue &...</h2>
+                        <p>From 249Extra 10%Off</p>
+                        <small>Jacket, Dresses & More</small>
+                    </div>
+                    <div class="productCard">
+                        <img src="./images/LAVA.jpeg" alt="product1" />
+                        <h2>LAVA A1500</h2>
+                        <p>Flat 830 Off</p>
+                        <small>Now 999</small>
+                    </div>
 
-                <div>
+                </div>
+            </div>
+            <div class="adBanner">
+                <img src="./images/adBanner.jpeg" alt="ad" />
+            </div>
+        </section>
+        <section class="sectionclass">
+            <div class="sectionHeader">
+                <div class="sectionDes">
+                    <big style="display: block">Books And music Instruments</big>
+                    <small style="display: block">Shop now</small>
+                </div>
+                <button>VIEW ALL</button>
+            </div>
+            <div class="deal-flex">
+                <div class="productCard">
                     <img src="./images/harmoniums.jpeg" alt="product1" />
                     <h2>Harmoniums</h2>
                     <p>Up to 60% Off</p>
                     <small>Shop Now!</small>
                 </div>
-                <div>
-                    <img src="./images/flutes.jpeg" alt="product1">
+                <div class="productCard">
+                    <img src="./images/flutes.jpeg" alt="product1" />
                     <h2>Flutes</h2>
                     <p>Up to 80% Off</p>
                     <small>Shop Now!</small>
                 </div>
-                <div>
-                    <img src="./images/acoustic-guitars.jpeg" alt="product1">
+                <div class="productCard">
+                    <img src="./images/acoustic-guitars.jpeg" alt="product1" />
                     <h2>Acoustic Guitars</h2>
                     <p>Starting ₹1799</p>
                     <small>Juarez, Revel..</small>
                 </div>
-                <div>
-                    <img src="./images/musical-acce.jpeg" alt="product1">
+                <div class="productCard">
+                    <img src="./images/musical-acce.jpeg" alt="product1" />
                     <h2>Musical Accessories</h2>
                     <p>Up to 80% Off</p>
                     <small>Shop Now!</small>
                 </div>
-                <div>
-                    <img src="./images/microphone.jpeg" alt="product1">
+                <div class="productCard">
+                    <img src="./images/microphone.jpeg" alt="product1" />
                     <h2>Microphones Accessories</h2>
                     <p>Up to 80% Off</p>
                     <small>Shop Now!</small>
                 </div>
-                <div>
-                    <img src="./images/acoustic-guitars.jpeg" alt="product1">
+                <div class="productCard">
+                    <img src="./images/acoustic-guitars.jpeg" alt="product1" />
                     <h2>Acoustic Guitars</h2>
                     <p>Starting ₹1999</p>
                     <small>By Revel..</small>
                 </div>
             </div>
-
         </section>
     </main>
 </body>
