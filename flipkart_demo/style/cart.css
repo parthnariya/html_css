@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 
-:root{
-    --blue : #2874f0;
+:root {
+  --blue: #2874f0;
 }
 body {
   margin: 0;
@@ -15,33 +15,25 @@ header {
   width: 100%;
   height: auto;
   position: fixed;
+  z-index: 2;
   top: 0;
 }
 
-nav{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 0 15px;
-    flex-wrap: wrap;
-
-}
-
-nav ul {
+.nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
-nav ul li {
+.nav li {
   height: 100%;
   padding: 0px 7px 0px 7px;
 }
 
-nav a {
+.nav a {
   text-decoration: none;
   font-size: 1.2rem;
   color: white;
@@ -58,7 +50,7 @@ nav a {
   position: relative;
 }
 
-.fa-search{
+.fa-search {
   color: var(--blue);
 }
 
@@ -72,13 +64,18 @@ nav a {
   top: 18px;
   right: 15px;
 }
-.rightNav{
+.rightNav {
   display: flex;
   width: 280px;
   justify-content: space-evenly;
   align-items: center;
 }
-.text-white{
+.leftNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text-white {
   color: white;
 }
 
@@ -89,13 +86,13 @@ nav a {
   background-color: #fff;
   cursor: pointer;
   border-radius: 2px;
-  width: 69px;
-  height: 20px;
+  width: auto;
+  height: auto;
   border: 1px solid #dbdbdb;
   padding-left: 5px;
 }
-
-.rightNav .fa-caret-down, .rightNav .fa-shopping-cart {
+.rightNav .fa-caret-down,
+.rightNav .fa-shopping-cart {
   margin-left: 5px;
 }
 
@@ -116,12 +113,12 @@ nav a {
   text-align: center;
 }
 .category-flex img {
-  height: 44px;
-  width: 48px;
-  display: block;
+  height: 57px;
+  width: auto;
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
+  object-fit: contain;
 }
 .category-flex p {
   font-size: 13px;
@@ -136,6 +133,7 @@ nav a {
   background-color: white;
   flex-grow: 1;
   overflow: auto;
+  position: relative;
 }
 .sectionTop {
   display: flex;
@@ -151,12 +149,12 @@ nav a {
   padding: 0px 20px;
   box-shadow: 0 1px 1px 0 rgb(0 0 0/16%);
 }
-.sectionDes big{
+.sectionDes big {
   font-size: 20px;
   font-weight: 400;
   margin-right: 10px;
 }
-.sectionDes small{
+.sectionDes small {
   font-weight: 400;
 }
 .sectionHeader button {
@@ -165,16 +163,30 @@ nav a {
   border: none;
   background-color: var(--blue);
   color: white;
-  margin:7px 0px;
+  margin: 7px 0px;
 }
 .sectionHeader small {
   margin-top: 3px;
   padding: 2px;
-  font-size: 10px;
+  font-size: 15px;
   color: gray;
 }
-
-.adBanner{
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  padding: 26px 15px;
+  border-radius: 4px 0 0 4px;
+  background-color: white;
+  box-shadow: 0 1px 8px #e6e6e6, -1px 0 8px #e6e6e6, 0 -1px 8px #e6e6e6;
+  z-index: 1;
+  cursor: pointer;
+  right: 0;
+}
+.adBanner {
   padding: 0px;
 }
 
@@ -185,13 +197,12 @@ nav a {
   padding: 5px 3px;
   border-radius: 5px;
 }
-.productCard{
-
+.productCard {
   text-align: center;
   line-height: 20px;
   padding: 15px;
 }
-.productCard img{
+.productCard img {
   width: 130px;
   height: 150px;
   object-fit: contain;
@@ -205,6 +216,7 @@ nav a {
   justify-content: space-between;
   flex-grow: 1;
   /* width: 100%; */
+  /* position: relative; */
   margin: 10px 0px;
   overflow: auto;
 }
@@ -221,18 +233,18 @@ nav a {
   color: rgb(42, 122, 42);
   padding: 2px;
   margin: 1px;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 500;
 }
 .productCard small {
   text-align: center;
-  font-size: 9px;
+  font-size: 12px;
   color: gray;
   display: block;
 }
 
-@media only screen and (max-width : 768px){
-  nav { 
+@media only screen and (max-width: 768px) {
+  nav {
     margin-bottom: 15px;
   }
   .category-flex {
@@ -240,10 +252,10 @@ nav a {
   }
 }
 @media only screen and (max-width: 640px) {
-  .sectionTop{
+  .sectionTop {
     flex-wrap: wrap;
   }
-  .searchBox input{
-      width: 224px;
+  .searchBox input {
+    width: 224px;
   }
 }
