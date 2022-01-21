@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+:root {
+  --blue: #2874f0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: var(--blue);
+  width: 100%;
+  height: auto;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+}
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nav li {
+  height: 100%;
+  padding: 0px 7px 0px 7px;
+}
+
+.nav a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+  padding: 0;
+}
+.logoimage {
+  height: 55px;
+  width: auto;
+}
+.searchBox {
+  text-align: left;
+  line-height: 53px;
+  margin-left: 10px;
+  position: relative;
+}
+
+.fa-search {
+  color: var(--blue);
+}
+
+.searchBox input {
+  padding: 8px;
+  width: 330px;
+}
+
+.searchBox i {
+  position: absolute;
+  top: 18px;
+  right: 15px;
+}
+.rightNav {
+  display: flex;
+  width: 280px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.leftNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text-white {
+  color: white;
+}
+
+.loginBtn {
+  color: var(--blue);
+  font-weight: 500;
+  text-align: center;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 2px;
+  width: auto;
+  height: auto;
+  border: 1px solid #dbdbdb;
+  padding-left: 5px;
+}
+.rightNav .fa-caret-down,
+.rightNav .fa-shopping-cart {
+  margin-left: 5px;
+}
+
+.category-flex {
+  display: flex;
+  width: auto;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  overflow: auto;
+  justify-content: center;
+  align-content: center;
+  padding: 2px 40px;
+  margin: 75px 40px 7px 40px;
+  background-color: white;
+}
+.category-flex > div {
+  flex-basis: 9%;
+  text-align: center;
+}
+.category-flex img {
+  height: 57px;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  object-fit: contain;
+}
+.category-flex p {
+  font-size: 13px;
+}
+.category-flex select {
+  border: none;
+  background-color: white;
+}
+
+.sectionclass {
+  margin: 7px 60px;
+  background-color: white;
+  flex-grow: 1;
+  overflow: auto;
+  position: relative;
+}
+.sectionTop {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 15px;
+  margin-right: 60px;
+}
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  padding: 0px 20px;
+  box-shadow: 0 1px 1px 0 rgb(0 0 0/16%);
+}
+.sectionDes big {
+  font-size: 20px;
+  font-weight: 400;
+  margin-right: 10px;
+}
+.sectionDes small {
+  font-weight: 400;
+}
+.sectionHeader button {
+  width: 90px;
+  height: 40px;
+  border: none;
+  background-color: var(--blue);
+  color: white;
+  margin: 7px 0px;
+}
+.sectionHeader small {
+  margin-top: 3px;
+  padding: 2px;
+  font-size: 15px;
+  color: gray;
+}
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  padding: 26px 15px;
+  border-radius: 4px 0 0 4px;
+  background-color: white;
+  box-shadow: 0 1px 8px #e6e6e6, -1px 0 8px #e6e6e6, 0 -1px 8px #e6e6e6;
+  z-index: 1;
+  cursor: pointer;
+  right: 0;
+}
+.adBanner {
+  padding: 0px;
+}
+
+.adBanner img {
+  width: auto;
+  height: auto;
+  max-width: 222px;
+  padding: 5px 3px;
+  border-radius: 5px;
+}
+.productCard {
+  text-align: center;
+  line-height: 20px;
+  padding: 15px;
+}
+.productCard img {
+  width: 130px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.productCard img:hover {
+  transform: scale(1.1);
+}
+.deal-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  /* width: 100%; */
+  /* position: relative; */
+  margin: 10px 0px;
+  overflow: auto;
+}
+.productCard h2 {
+  text-align: center;
+  font-size: 12px;
+  font-weight: normal;
+  padding: 2px;
+  margin: 2px;
+  text-overflow: ellipsis;
+}
+.productCard p {
+  text-align: center;
+  color: rgb(42, 122, 42);
+  padding: 2px;
+  margin: 1px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.productCard small {
+  text-align: center;
+  font-size: 12px;
+  color: gray;
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    margin-bottom: 15px;
+  }
+  .category-flex {
+    margin-top: 120px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .sectionTop {
+    flex-wrap: wrap;
+  }
+  .searchBox input {
+    width: 224px;
+  }
+}
